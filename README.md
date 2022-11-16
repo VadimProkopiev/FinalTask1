@@ -25,6 +25,8 @@
 Выводим массив результатов в консоль
 В данном алгоритме пункты 2, 4 и 5 можно выполнить в виде отдельных функций.
 
+[Файл с блок-схемой](https://github.com/VadimProkopiev/FinalTask1/blob/main/Task.drawio.png)
+
 ### Примеры массивов и результаты выводов
 ~~~
 ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
@@ -33,3 +35,4 @@
 
 ["Russia", "Denmark", "Kazan"] -> []
 ~~~
+[Файл с кодом](https://github.com/VadimProkopiev/FinalTask1/blob/main/Program.cs)
