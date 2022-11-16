@@ -1,6 +1,22 @@
-﻿string[] arr = new string[3] { "Russia", "Denmark", "Kazan" };
-string[] arr2 = new string[arr.Length];
-void SecondArray(string[] arr, string[] arr2)
+﻿string[] arr = new string[5] { "Rus", "De", "Ka", "43", "434y975" };
+int len = 1;
+void SecondArray(string[] arr, out int len)
+{
+    len = 0;
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            len = count + 1;
+            count++;
+        }
+    }
+}
+SecondArray(arr, out len);
+Console.WriteLine(len);
+string[] arr2 = new string[len];
+void SecondArrayFind(string[] arr, string[] arr2)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -12,13 +28,16 @@ void SecondArray(string[] arr, string[] arr2)
         }
     }
 }
+SecondArrayFind(arr, arr2);
+
 void PrintArray(string[] array)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < len; i++)
     {
         Console.Write($"{array[i]}  ");
     }
     Console.WriteLine();
 }
-SecondArray(arr, arr2);
+
+SecondArrayFind(arr, arr2);
 PrintArray(arr2);
