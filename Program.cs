@@ -10,7 +10,7 @@
 // ["Russia", "Denmark", "Kazan"] -> []
 
 
-string[] arr = new string[5] { "Rus", "De", "Ka", "43", "434y975" };
+string[] arr = new string[3] { "Russia", "Denmark", "Kazan" };
 int len = 0;
 void SecondArray(string[] arr, out int len)
 {
@@ -26,7 +26,7 @@ void SecondArray(string[] arr, out int len)
     }
 }
 SecondArray(arr, out len);
-Console.WriteLine(len);
+
 string[] arr2 = new string[len];
 void SecondArrayFind(string[] arr, string[] arr2)
 {
