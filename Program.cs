@@ -1,5 +1,5 @@
 ﻿string[] arr = new string[5] { "Rus", "De", "Ka", "43", "434y975" };
-int len = 1;
+int len = 0;
 void SecondArray(string[] arr, out int len)
 {
     len = 0;
