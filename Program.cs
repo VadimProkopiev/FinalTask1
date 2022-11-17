@@ -8,9 +8,9 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 
 // ["Russia", "Denmark", "Kazan"] -> []
-
-
-string[] arr = new string[4] { "he1", "23", "wor", ":-)" };
+Console.WriteLine("Введите число символов для нового массива");
+int n = Convert.ToInt32(Console.ReadLine());
+string[] arr = new string[4] { "he14", "23", "wor", ":-)" };
 int len = 0;
 void SecondArray(string[] arr, out int len)
 {
@@ -18,7 +18,7 @@ void SecondArray(string[] arr, out int len)
     int count = 1;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= 3)
+        if (arr[i].Length <= n)
         {
             len = count;
             count++;
@@ -26,14 +26,13 @@ void SecondArray(string[] arr, out int len)
     }
 }
 SecondArray(arr, out len);
-Console.WriteLine(len);
 string[] arr2 = new string[len];
 void SecondArrayFind(string[] arr, string[] arr2)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= 3)
+        if (arr[i].Length <= n)
         {
             arr2[count] = arr[i];
             count++;
