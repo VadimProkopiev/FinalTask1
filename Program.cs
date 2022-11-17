@@ -10,7 +10,7 @@
 // ["Russia", "Denmark", "Kazan"] -> []
 
 
-string[] arr = new string[4] { "he11", "23111", "world", "1:-)" };
+string[] arr = new string[4] { "he1", "23", "wor", ":-)" };
 int len = 0;
 void SecondArray(string[] arr, out int len)
 {
